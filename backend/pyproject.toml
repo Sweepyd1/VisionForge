@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["DIMFLIX-OFFICIAL <dimflix.official@gmail.com>"]
+readme = "README.md"
+packages = [{include = "*", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = {extras = ["all"], version = "^0.115.0"}
+asyncpg = "^0.29.0"
+pillow = "^10.4.0"
+environs = "^11.0.0"
+loguru = "^0.7.2"
+uvicorn = "^0.30.6"
+uvloop = "^0.20.0"
+python-jose = "^3.3.0"
+passlib = "^1.7.4"
+aiofiles = "^24.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
